@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño UI/UX | Diego Ferrel</title>
+    <link rel="icon" type="image/png" href="./Recursos/Logo@3x.png">
+
+    <link rel="stylesheet" href="./css/styles_categoria.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="modal-imagen" id="modalImagen">
+        <span class="cerrar-modal">&times;</span>
+        <img id="imagenGrande" src="" alt="">
+    </div>
+
+    <header>
+        <div class="header-container">
+            <a href="./index.html" style="text-decoration: none; color: inherit;">
+                <h2 style="font-family: 'League Spartan', sans-serif; font-weight: 700; margin: 0; font-size: 1.5rem; letter-spacing: 1px;">DIEGO <span style="color: #bfa15f;">FERREL</span></h2>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./index.html#servicios">Especialidades</a></li>
+                    <li><a href="./index.html#proyectos">Proyectos</a></li>
+                    <li><a href="https://www.linkedin.com/in/diego-ferrel-nu%C3%B1ez-9987aa386/" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-categoria">
+        <div class="hero-texto">
+            <span class="mini-titulo">ESPECIALIDAD</span>
+            <h1>Diseño <span>UI/UX</span></h1>
+            <p>Estructuración de flujos de usuario, wireframing interactivo y diseño de interfaces optimizadas para sistemas web y móviles.</p>
+        </div>
+
+        <div class="hero-imagen">
+            <video autoplay muted loop playsinline>
+                <source src="./Recursos/Proyectos/Web/VinylStore.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="grid-proyectos">
+        <article class="project-card">
+            <img src="./Recursos/Proyectos/UX/VinylStore.jpg" alt="E-commerce VinylStore">
+            <div class="contenido-card">
+                <h3>VinylStore E-commerce</h3>
+                <p>Diseño de experiencia de usuario enfocado en patrones de e-commerce, jerarquía visual y consistencia de componentes digitales.</p>
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>Illustrator</span>
+                    <span>Photoshop</span>
+                </div>
+                <button class="btn-card abrir-imagen" data-img="./Recursos/Proyectos/UX/VinilStore.jpg">
+                    VER PROYECTO
+                </button>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <img src="./Recursos/Proyectos/UX/Proyecto2.png" alt="Admin Panel Dentist">
+            <div class="contenido-card">
+                <h3>Panel Clínico & Citas</h3>
+                <p>Maquetación de dashboard administrativo y diseño de UI para la gestión interactiva de registros de pacientes y citas.</p>
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>Illustrator</span>
+                    <span>Photoshop</span>
+                </div>
+                <button class="btn-card abrir-imagen" data-img="./Recursos/Proyectos/UX/Proyecto2.png">
+                    VER PROYECTO
+                </button>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <img src="./Recursos/Proyectos/UX/Tuca.png" alt="App Móvil Tuca">
+            <div class="contenido-card">
+                <h3>Aplicación Móvil "Tuca"</h3>
+                <p>Prototipado interactivo de alta fidelidad enfocado en usabilidad móvil, accesibilidad y diseño de sistemas basados en componentes.</p>
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>Illustrator</span>
+                    <span>Photoshop</span>
+                </div>
+                <button class="btn-card abrir-imagen" data-img="./Recursos/Proyectos/UX/Tuca.png">
+                    VER PROYECTO
+                </button>
+            </div>
+        </article>
+    </section>
+
+    <section class="cta-final">
+        <div class="cta-container">
+            <h2>¿Quieres analizar a fondo mis prototipos interactivos en Figma?</h2>
+            <a href="https://www.linkedin.com/in/diego-ferrel-nu%C3%B1ez-9987aa386/" target="_blank" rel="noopener noreferrer" class="btn-card" style="display: inline-flex; align-items: center; gap: 8px;">
+                <i class="fa-brands fa-linkedin"></i> CONECTAR EN LINKEDIN
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-logo">
+                    <h2>DIEGO <span>FERREL</span></h2>
+                </div>
+                <p>Diseñador y desarrollador especializado en ingeniería de interfaces y soluciones de software interactivas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Java/script_proyectos.js"></script>
+</body>
+
+</html>

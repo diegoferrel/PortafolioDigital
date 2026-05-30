@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo Web Full-Stack | Diego Ferrel</title>
+
+    <link rel="stylesheet" href="./css/styles_categoria.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Recursos/Logo@3x.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="./index.html" style="text-decoration: none; color: inherit;">
+                <h2 style="font-family: 'League Spartan', sans-serif; font-weight: 700; margin: 0; font-size: 1.5rem; letter-spacing: 1px;">DIEGO <span style="color: #bfa15f;">FERREL</span></h2>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./index.html#servicios">Especialidades</a></li>
+                    <li><a href="./index.html#proyectos">Proyectos</a></li>
+                    <li><a href="https://www.linkedin.com/in/diego-ferrel-nu%C3%B1ez-9987aa386/" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-categoria">
+        <div class="hero-texto">
+            <span class="mini-titulo">ESPECIALIDAD</span>
+            <h1>Desarrollo <span>Web Full-Stack</span></h1>
+            <p>Construcción de aplicaciones web interactivas, responsivas y eficientes, uniendo una arquitectura sólida con interfaces dinámicas.</p>
+        </div>
+
+        <div class="hero-imagen">
+            <video autoplay muted loop playsinline>
+                <source src="./Recursos/Proyectos/Web/VinylStore.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="grid-proyectos">
+        <article class="project-card">
+            <video autoplay muted loop playsinline>
+                <source src="./Recursos/Proyectos/Web/VinylStore.mp4" type="video/mp4">
+            </video>
+            <div class="contenido-card">
+                <h3>VinylStore Frontend</h3>
+                <p>Desarrollo de la interfaz de una tienda virtual responsiva inspirada en la cultura del vinilo, optimizando la navegación y animaciones CSS.</p>
+                <div class="tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://diegoferrel.github.io/VinylStore.io/" class="btn-card" target="_blank" rel="noopener noreferrer">
+                    VER PROYECTO
+                </a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <video autoplay muted loop playsinline>
+                <source src="./Recursos/Proyectos/Web/Drawer.mp4" type="video/mp4">
+            </video>
+            <div class="contenido-card">
+                <h3>Drawer.io Canvas App</h3>
+                <p>Aplicación web de dibujo interactivo manipulada mediante la API de HTML5 Canvas y lógicas en Vanilla JavaScript para renderizado en tiempo real.</p>
+                <div class="tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://diegoferrel.github.io/Drawer.io/index.html" class="btn-card" target="_blank" rel="noopener noreferrer">
+                    VER PROYECTO
+                </a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <video autoplay muted loop playsinline>
+                <source src="./Recursos/Proyectos/Web/Dentista.mp4" type="video/mp4">
+            </video>
+            <div class="contenido-card">
+                <h3>Sistema de Citas Dentales</h3>
+                <p>Aplicación web dinámica enfocada en la gestión de servicios y agendas médicas. Integra una arquitectura conectada a base de datos relacional mediante PHP.</p>
+                <div class="tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>PHP</span>
+                </div>
+                <a href="https://diegoferrel.github.io/Sistema-de-Citas/index.html" class="btn-card" target="_blank" rel="noopener noreferrer">
+                    VER PROYECTO
+                </a>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <video autoplay muted loop playsinline>
+                <source src="./Recursos/Proyectos/Web/API.mp4" type="video/mp4">
+            </video>
+            <div class="contenido-card">
+                <h3>Peliculas</h3>
+                <p>Sitio web para gestión y reseñas de contenido multimedia. Desarrollado bajo una arquitectura Full-Stack con persistencia de datos local y despliegue en la nube.</p>
+                <div class="tags">
+                    <span>ASP.NET Core MVC</span>
+                    <span>SQL Database</span>
+                    <span>Azure App Service</span>
+                    <span>HTML5</span>
+                    <span>Bootstrap</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://peliculas20260525115320-fuaqdcb0dpf8aybz.canadacentral-01.azurewebsites.net/" class="btn-card" target="_blank" rel="noopener noreferrer">
+                    VER PROYECTO
+                </a>
+            </div>
+        </article>
+    </section>
+
+    <section class="cta-final">
+        <div class="cta-container">
+            <h2>¿Quieres revisar la arquitectura del código detrás de mis proyectos?</h2>
+            <a href="https://www.linkedin.com/in/diego-ferrel-nu%C3%B1ez-9987aa386/" target="_blank" rel="noopener noreferrer" class="btn-card" style="display: inline-flex; align-items: center; gap: 8px;">
+                <i class="fa-brands fa-linkedin"></i> CONECTAR EN LINKEDIN
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-logo">
+                    <h2>DIEGO <span>FERREL</span></h2>
+                </div>
+                <p>Diseñador y desarrollador especializado en ingeniería de interfaces y soluciones de software interactivas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Java/script_proyectos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entornos 3D e Interactivos | Diego Ferrel</title>
+    <link rel="icon" type="image/png" href="./Recursos/Logo@3x.png">
+
+    <link rel="stylesheet" href="./css/styles_categoria.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="modal-imagen" id="modalImagen">
+        <span class="cerrar-modal">&times;</span>
+        <img id="imagenGrande" src="" alt="" style="display: none;">
+        <video id="videoGrande" controls autoplay loop style="display: none;"></video>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <a href="./index.html" style="text-decoration: none; color: inherit;">
+                <h2 style="font-family: 'League Spartan', sans-serif; font-weight: 700; margin: 0; font-size: 1.5rem; letter-spacing: 1px;">DIEGO <span style="color: #bfa15f;">FERREL</span></h2>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./index.html#servicios">Especialidades</a></li>
+                    <li><a href="./index.html#proyectos">Proyectos</a></li>
+                    <li><a href="https://www.linkedin.com/in/diego-ferrel-nu%C3%B1ez-9987aa386/" target="_blank" rel="noopener noreferrer">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-categoria">
+        <div class="hero-texto">
+            <span class="mini-titulo">ESPECIALIDAD</span>
+            <h1>Entornos 3D <span>e Interactivos</span></h1>
+            <p>Modelado, rigging y simulación de lógicas visuales para software y entornos interactivos.</p>
+        </div>
+
+        <div class="hero-imagen">
+            <video autoplay muted loop playsinline>
+                <source src="./Recursos/Proyectos/Animacion/Daredevil_Spiderman_Final (1).mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <section class="grid-proyectos">
+        <article class="project-card">
+            <div class="media-container">
+                <video autoplay muted loop playsinline>
+                    <source src="./Recursos/Proyectos/Animacion/Daredevil_Spiderman_Final (1).mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="contenido-card">
+                <h3>Animación & Rigging Daredevil</h3>
+                <p>Estudio cinematográfico de cinemática interactiva, aplicando rigging complejo y control de físicas de colisión.</p>
+                <div class="tags">
+                    <span>Autodesk Maya</span>
+                    <span>Blender</span>
+                    <span>After Effects</span>
+                    <span>Audition</span>
+                </div>
+                <button class="btn-card abrir-imagen" data-img="./Recursos/Proyectos/Animacion/Daredevil_Spiderman_Final (1).mp4">
+                    VER PROYECTO
+                </button>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="media-container">
+                <video autoplay muted loop playsinline>
+                    <source src="./Recursos/Proyectos/Animacion/Diego_PostProduccion_AnimacionPersonal.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="contenido-card">
+                <h3>Animación Orgánica Zorro</h3>
+                <p>Desarrollo de ciclos de caminado e integración de texturas optimizadas para entornos tridimensionales.</p>
+                <div class="tags">
+                    <span>Autodesk Maya</span>
+                    <span>Blender</span>
+                    <span>After Effects</span>
+                    <span>Audition</span>
+                </div>
+                <button class="btn-card abrir-imagen" data-img="./Recursos/Proyectos/Animacion/Diego_PostProduccion_AnimacionPersonal.mp4">
+                    VER PROYECTO
+                </button>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="media-container">
+                <video autoplay muted loop playsinline>
+                    <source src="./Recursos/Proyectos/Animacion/Proyecto Final.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="contenido-card">
+                <h3>Animación Vectorial 2D</h3>
+                <p>Diseño de storyboards y desarrollo de gráficos en movimiento con sincronización de audio avanzada.</p>
+                <div class="tags">
+                    <span>After Effects</span>
+                    <span>Illustrator</span>
+                    <span>Audition</span>
+                </div>
+                <button class="btn-card abrir-imagen" data-img="./Recursos/Proyectos/Animacion/Proyecto Final.mp4">
+                    VER PROYECTO
+                </button>
+            </div>
+        </article>
+    </section>
+
+    <section class="cta-final">
+        <div class="cta-container">
+            <h2>¿Quieres conocer más sobre mi flujo técnico con assets 3D?</h2>
+            <a href="https://www.linkedin.com/in/diego-ferrel-nu%C3%B1ez-9987aa386/" target="_blank" rel="noopener noreferrer" class="btn-card" style="display: inline-flex; align-items: center; gap: 8px;">
+                <i class="fa-brands fa-linkedin"></i> CONECTAR EN LINKEDIN
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <div class="footer-logo">
+                    <h2>DIEGO <span>FERREL</span></h2>
+                </div>
+                <p>Diseñador y desarrollador especializado en ingeniería de interfaces y soluciones de software interactivas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./Java/script_publicidad.js"></script>
+</body>
+</html>
