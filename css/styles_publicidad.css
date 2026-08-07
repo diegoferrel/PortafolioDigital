@@ -1,6 +1,4 @@
-/* ==========================================
-   RESET & BASE STYLES
-   ========================================== */
+
 *{
     margin: 0;
     padding: 0;
@@ -14,9 +12,6 @@ body{
     overflow-x: hidden;
 }
 
-/* ==========================================
-   HEADER & NAVIGATION
-   ========================================== */
 header{
     width: 100%;
     display: flex;
@@ -63,9 +58,6 @@ nav a:hover{
     cursor: pointer;
 }
 
-/* ==========================================
-   HERO SECTION
-   ========================================== */
 .hero-categoria{
     width: 100%;
     max-width: 1400px;
@@ -120,9 +112,6 @@ nav a:hover{
     border: 1px solid rgba(212,162,76,.2);
 }
 
-/* ==========================================
-   PROJECTS GRID
-   ========================================== */
 .grid-proyectos{
     width: 100%;
     max-width: 1400px;
@@ -180,7 +169,7 @@ nav a:hover{
     color: #C5C5C5;
     line-height: 1.6;
     font-size: 15px;
-    flex-grow: 1; /* Empuja los botones hacia abajo de forma uniforme */
+    flex-grow: 1; 
 }
 
 .tags{
@@ -219,9 +208,6 @@ nav a:hover{
     transform: scale(1.05);
 }
 
-/* ==========================================
-   CALL TO ACTION (CTA)
-   ========================================== */
 .cta-final{
     padding: 40px 4%;
     max-width: 1400px;
@@ -250,9 +236,6 @@ nav a:hover{
     color: #D4A24C;
 }
 
-/* ==========================================
-   FOOTER
-   ========================================== */
 .footer{
     border-top: 1px solid rgba(255,255,255,.08);
     padding: 60px 4%;
@@ -289,9 +272,6 @@ nav a:hover{
     line-height: 1.7;
 }
 
-/* ==========================================
-   MODAL LIGHTBOX
-   ========================================== */
 .modal-imagen{
     position: fixed;
     inset: 0;
@@ -331,11 +311,6 @@ nav a:hover{
 }
 
 
-/* ==========================================
-   MEDIA QUERIES (RESPONSIVE)
-   ========================================== */
-
-/* Tablets y Pantallas Medianas (Laptops pequeñas) */
 @media(max-width: 1024px){
     .hero-categoria{
         gap: 40px;
@@ -346,9 +321,7 @@ nav a:hover{
     }
 }
 
-/* Tablets Verticales y Móviles Grandes */
 @media(max-width: 768px){
-    /* Menu Hamburguesa */
     .menu-toggle {
         display: block;
     }
@@ -366,7 +339,7 @@ nav a:hover{
     }
 
     nav.open {
-        max-height: 300px; /* Despliegue suave */
+        max-height: 300px; 
     }
 
     nav ul {
@@ -378,7 +351,7 @@ nav a:hover{
 
     /* Hero Responsive */
     .hero-categoria{
-        flex-direction: column-reverse; /* Imagen arriba, texto abajo en móviles */
+        flex-direction: column-reverse; 
         text-align: center;
         padding: 50px 4%;
     }
@@ -389,7 +362,6 @@ nav a:hover{
         align-items: center;
     }
 
-    /* Grid a una sola columna */
     .grid-proyectos{
         grid-template-columns: 1fr;
         gap: 40px;
@@ -407,12 +379,11 @@ nav a:hover{
     }
 
     .btn-card {
-        width: 100%; /* Botones completos en celular */
+        width: 100%; 
         justify-content: center;
     }
 }
 
-/* Teléfonos Pequeños */
 @media (max-width: 480px) {
     header img.logo {
         width: 140px;

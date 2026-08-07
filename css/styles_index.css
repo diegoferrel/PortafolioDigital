@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    position: fixed; /* Hace que el nav siga el scroll */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -53,7 +53,7 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    width: 200px; /* Ajusta según el tamaño real de tu logo */
+    width: 200px;
 }
 
 .logo-container img {
@@ -102,9 +102,8 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-/* BOTÓN HAMBURGUESA */
 .hamburger {
-    display: none; /* Oculto en escritorio */
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
@@ -122,9 +121,8 @@ nav ul li a:hover::after {
     transition: all 0.3s ease-in-out;
 }
 
-/* Compensación de altura para la primera sección debido al header fixed */
 .primeraseccion {
-    margin-top: 12dvh; /* Debe ser igual al height del header */
+    margin-top: 12dvh; 
 }
 
 .primeraseccion {
@@ -2140,9 +2138,6 @@ nav ul li a:hover::after {
 
 }
 
-/* =========================
-   720px
-========================= */
 @media screen and (max-width:720px) {
 
     header {
@@ -2288,9 +2283,6 @@ nav ul li a:hover::after {
     }
 }
 
-/* =========================
-   650px
-========================= */
 @media screen and (max-width:650px) {
 
     header nav ul {
