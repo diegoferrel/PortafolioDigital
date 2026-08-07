@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.addEventListener("click", () => {
         navMenu.classList.toggle("open");
         
-        // Cambia el icono de hamburguesa (bars) a una equis (times) al abrir
         const icon = menuToggle.querySelector("i");
         if (navMenu.classList.contains("open")) {
             icon.classList.replace("fa-bars", "fa-times");

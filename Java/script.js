@@ -8,7 +8,6 @@ document.querySelectorAll(".btn-card").forEach(btn => {
 
         const href = btn.getAttribute("href");
 
-        // 🔵 externos
         if (href && href.startsWith("http")) return;
 
         e.preventDefault();
@@ -57,13 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const navMenu = document.getElementById("nav-menu");
     const navLinks = document.querySelectorAll("#nav-menu ul li a");
 
-    // Alternar clases al hacer click en la hamburguesa
     hamburgerBtn.addEventListener("click", () => {
         hamburgerBtn.classList.toggle("active");
         navMenu.classList.toggle("active");
     });
 
-    // Cerrar el menú automáticamente al clickear un enlace (anclas internas)
     navLinks.forEach(link => {
         link.addEventListener("click", () => {
             hamburgerBtn.classList.remove("active");

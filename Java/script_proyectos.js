@@ -1,17 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
     
-    // 1. CONTROL DEL MENÚ RESPONSIVE
     const menuToggle = document.getElementById("menuToggle");
     const navMenu = document.getElementById("navMenu");
 
     if (menuToggle && navMenu) {
         menuToggle.addEventListener("click", () => {
-            // Alterna la clase que acabamos de corregir en el CSS
             navMenu.classList.toggle("open");
             
             const icon = menuToggle.querySelector("i");
             if (icon) {
-                // Si el menú está abierto, cambia la hamburguesa por una X
                 if (navMenu.classList.contains("open")) {
                     icon.classList.remove("fa-bars");
                     icon.classList.add("fa-times");
@@ -23,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // 2. CONTROL DEL MODAL (Evita errores si el modal no existe en la página)
     const modal = document.getElementById("modalImagen");
     
     if (modal) {
